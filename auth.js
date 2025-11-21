@@ -413,6 +413,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         );
         const data = await response.json();
+        console.log("Signup Response:", data);
 
         if (response.ok && data.response && data.response.token) {
           // Store user data in cookies
@@ -503,6 +504,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
         const data = await response.json();
+        console.log("Login Response:", data);
 
         if (response.ok && data.response) {
           // Store user data in cookies
